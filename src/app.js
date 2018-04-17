@@ -1,7 +1,69 @@
-console.log('App.js is running!')
+class IndecisionApp extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <Action />
+        <Options />
+        <AddOption />
+      </div>
+    )
+  }
+}
 
-// JSX  - JavaScript XML
-var template = <h1>Indecision App</h1>;
-var appRoot = document.getElementById('app');
 
-ReactDOM.render(template, appRoot)
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        Header component here
+      </div>
+    )
+  }
+}
+
+class Action extends React.Component {
+  render() {
+    return (
+      <div>
+        <button>What should I do</button>
+      </div>
+    )
+  }
+}
+
+
+class Options extends React.Component {
+  render() {
+    return (
+      <div>
+        Options component here
+        <Option />
+      </div>
+    )
+  }
+}
+
+// Option -> Option component here
+class Option extends React.Component {
+  render() {
+    return (
+      <div>
+        Option component here
+      </div>
+    )
+  }
+}
+
+class AddOption extends React.Component {
+  render() {
+    return (
+      <div>
+        AddOption component here
+      </div>
+    )
+  }
+}
+
+
+ReactDOM.render(<IndecisionApp />, document.getElementById('app'))
