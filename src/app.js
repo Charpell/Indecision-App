@@ -1,4 +1,5 @@
-import {square} from './utils.js'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log('app.js is loading')
-console.log(square(4))
+const template = React.createElement('p')
+ReactDOM.render(template, document.getElementById('app'))
